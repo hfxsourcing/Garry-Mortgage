@@ -443,7 +443,8 @@ src="https://www.facebook.com/tr?id=1298603595814573&ev=PageView&noscript=1"
       }
 
       document.getElementById('form-wrap').style.display = 'none';
-      document.getElementById('success').style.display = 'block';
+      document.getElementById('success').style.display = 'block';  
+     fbq('track', 'Lead');
     } catch (err) {
       console.error(err);
       btn.disabled = false;
